@@ -168,15 +168,17 @@ header .header__main--main .header__right:after, .bottom .header__main--main .he
 
 .reviews { *zoom: 1; margin-top: 65px; padding-bottom: 60px; }
 .reviews:after { content: " "; display: table; clear: both; }
-.reviews h2 { margin-bottom: 35px; }
+.reviews h2 { margin-bottom: 25px; }
 .reviews .reviews_in { *zoom: 1; }
 .reviews .reviews_in:after { content: " "; display: table; clear: both; }
-.reviews .review__item { -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; width: 300px; position: relative; display: inline-block; margin-right: 42px; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; padding: 18px; background: #efebe1; -moz-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.1); -webkit-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.1); box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.1); -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; *zoom: 1; }
+.reviews .review__item { vertical-align: top; text-align: center; -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; width: 300px; position: relative; display: inline-block; margin-right: 25px; padding: 5px; *zoom: 1; }
 .reviews .review__item:after { content: " "; display: table; clear: both; }
 .reviews .review__item:last-child { margin-right: 0; }
-.reviews .review__item:after { position: absolute; content: ""; bottom: -34px; left: 15px; background: url('../img/icons-s38ce654849.png') 0 -624px no-repeat; width: 52px; height: 40px; }
-.reviews .review__item h3 { color: #3c3c3c; font-size: 18px; font-family: "conv_pfdintextcondpro-light"; text-transform: uppercase; margin-bottom: 10px; font-weight: normal; }
-.reviews .review__item p { font-family: "Conv_PFDinTextCondPro-Light"; font-weight: normal; font-style: normal; color: #3c3c3c; font-size: 16px; }
+.reviews .review__item .review__img { display: inline-block; width: 120px; height: 120px; border: solid 2px #e6e6e6; text-align: center; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+.reviews .review__item .review__img .vertical-aligned { vertical-align: middle; height: 100%; display: inline-block; }
+.reviews .review__item .review__img img { vertical-align: middle; display: inline-block; }
+.reviews .review__item h3 { color: #b41919; font-size: 24px; font-family: "conv_pfdintextcondpro-thin"; text-transform: uppercase; margin: 10px 0; font-weight: normal; }
+.reviews .review__item p { font-family: "Conv_PFDinTextCondPro-Light"; font-weight: normal; font-style: normal; color: #1e1e1e; font-size: 16px; padding: 0 10px; }
 
 .our { background: url(../img/our_bg.jpg) center no-repeat; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; height: 800px; padding-top: 65px; position: relative; *zoom: 1; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .our:after { content: " "; display: table; clear: both; }
