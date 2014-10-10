@@ -513,62 +513,58 @@ header
     margin-bottom: 40px
   &__item
     vertical-align: top
-    width: 320px
+    position: relative
+    width: 300px
     +background-clip(padding-box)
-    border: solid 4px rgb(230,230,230)
+    border: solid 2px rgb(243,243,243)
     text-align: center
     padding-top: 20px
-    padding-bottom: 20px
+    padding-bottom: 30px
     display: inline-block
-    margin-right: 14px
+    margin-right: 44px
     +box
     &:last-child
       margin-right: 0
   &__caption
-    font-size: 36px
-    font-family: 'pf_highway_sans_prolight'
-    margin-bottom: 95px
-    color: #281e1e
+    font-size: 30px
+    font-family: 'conv_pfdintextcondpro-thin'
+    margin-bottom: 15px
+    color: #1e1e1e
   &__img
     display: inline-block
-    margin-bottom: 75px
-    width: 250px
-    height: 85px
+    width: 170px
+    height: 300px
+    margin-bottom: 20px
     img
       display: block
   &__price
-    background: url(../img/price-order_bg.png) no-repeat
-    width: 320px
-    height: 80px
+    position: absolute
+    text-align: center
     +box
-    margin-left: -4px
+    padding-top: 35px
+    color: #1e1e1e
+    font-size: 36px
+    font-family: 'conv_pfdintextcondpro-regular'
+    top: 80px
+    left: -20px
+    width: 120px
+    height: 120px
+    +border-radius(50%)
+    +background-image(linear-gradient(to bottom, rgba(#ffef00, .7) 0%, rgba(#ffdb4f, .7) 100%))
+    span
+      font-size: 18px
+      font-family: 'als_rublregular'
 
-    h3
-      font-family: 'conv_pfdintextcondpro-regular'
-      font-size: 48px
-      font-weight: normal
-      color: #ffffff
-      margin-left: 50px
-      margin-top: 6px
-      float: left
-      span
-        font-family: 'als_rublregular'
-        font-size: 24px
-    h4
-      color: #736464
-      font-size: 24px
-      font-family: 'conv_pfdintextcondpro-light'
-      font-weight: normal
-      float: right
-      margin-top: 23px
-      margin-right: 40px
-  &__text
-    padding: 20px 15px 0
-    font-size: 16px
-    color: #787878
-    text-align: left
+  &__link
+    display: inline-block
+    font-size: 18px
+    color: #281e1e
+    font-family: 'conv_pfdintextcondpro-lightital'
+    &:hover
+      text-decoration: none
+
   &__form
-    margin-top: 35px
+    margin-top: 22px
     input
       width: 250px
       margin-bottom: 10px
