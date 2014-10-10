@@ -284,12 +284,14 @@ header
       +s(prev)
       top: 40%
       left: -80px
+      cursor: pointer
     .next
       position: absolute
       content: ""
       +s(next)
       top: 40%
       right: -80px
+      cursor: pointer
     .threesixty
       position: absolute
       text-align: center
@@ -426,16 +428,25 @@ header
     line-height: 1em
     text-transform: uppercase
   h2
+    color: #ffffff
     line-height: 1em
     span
-      font-family: 'conv_pfdintextcondpro-thin'
-      font-size: 36px
+      font-family: 'conv_pfdintextcondpro-medium'
+      font-size: 72px
 
 
   .our_in
     @extend %in
     position: relative
     +clr
+    .girl
+      position: absolute
+      bottom: -70px
+      left: -50px
+      z-index: 1
+      img
+        display: block
+
 
   .russia
     position: relative
@@ -453,6 +464,7 @@ header
     left: 50%
     +transform(translate(-50%, -50%))
     margin-top: 60px
+    margin-left: 35px
     &:before
       position: absolute
       content: ""
@@ -461,7 +473,7 @@ header
       left: -132px
   &__bottom
     width: 600px
-    margin: 55px auto 0
+    margin: 55px auto 0 340px
     position: relative
   &__price
     width: 180px
