@@ -573,12 +573,20 @@ header
 
 
 .bottom
-  height: 840px
+  height: 770px
+  .h1
+    @extend h1
+    padding-top: 42px
   @extend header
   padding-top: 0
+  margin-top: 0
+  .header__main--main--bottom
   .header__main--main_in--bottom
     margin-top: 55px !important
-
+    .watch--bottom
+      background: url(../img/bottom_watch.png) no-repeat
+      width: 410px
+      height: 660px
 
 footer
   box-sizing: border-box
