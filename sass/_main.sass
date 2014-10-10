@@ -152,61 +152,90 @@ header
 
 
 .history
-  padding-top: 60px
-  background: #090505
+  height: 565px
+  +background-size(cover)
+  padding-top: 110px
+  background: url(../img/history_bg.jpg) center center no-repeat
   +box
   +clr
+  h2
+    line-height: 1em
+    span
+      font-size: 72px
+      color: #1e1e1e
   .history_in
     @extend %in
-    padding-top: 50px
     +clr
   .history__block
-    margin-top: 0
+    margin-top: 74px
+    padding: 30px
+    background-color: #cdbdb3
+    +background-image(linear-gradient(to bottom, #efefef 0%, #dbdbdb 100%))
     +clr
+    position: relative
+    z-index: 2
     .history__block--left
       float: left
-      width: 700px
+      width: 515px
       +clr
       p
         font-size: 18px
         margin-bottom: 28px
-        color: #ffffff
+        color: #1e1e1e
         +pfl
         line-height: 1.5em
 
     .history__block--right
       float: right
       width: 290px
+      position: relative
       +clr
       .history__img
-        position: relative
+        position: absolute
         display: block
-        width: 290px
-        height: 369px
+        width: 440px
+        height: 375px
         +clr
-        +transition(all .5s)
-        &:hover
-          +opacity(.7)
+        top: -128px
+        right: -30px
+
         img
           display: block
-        .history__video
+      .history__video
+        position: absolute
+        top: 177px
+        right: -30px
+        color: #281e1e
+        font-family: 'conv_pfdintextcondpro-light'
+        font-size: 24px
+        text-align: center
+        padding-top: 18px
+        padding-left: 35px
+        +box
+        width: 280px
+        height: 70px
+        +border-radius(4px 0 0 0)
+        +background-clip(padding-box)
+        +background-image(linear-gradient(to bottom, #ffef00 0%, #ffdb4f 100%))
+        i
           position: absolute
-          top: 40px
-          left: 93px
-          color: #ffffff
-          font-family: 'conv_segoeprintregular'
-          font-size: 14px
           +s(video_ico)
-          text-align: center
-          padding-top: 100px
-          +box
+          left: 15px
+          top: 15px
+  .history__shadow
+    background: url(../img/shadow.png) center center no-repeat
+    margin: 0 auto
+    position: relative
+    width: 780px
+    height: 40px
+    top: -20px
+    z-index: 1
+
 
 
 .specs
-  background: url(../img/specs_bg.jpg) center center no-repeat
-  +background-size(cover)
-  height: 910px
-  padding-top: 90px
+  background: #ffffff
+  padding-top: 70px
   +clr
   +box
   h2
@@ -216,69 +245,95 @@ header
     width: 960px
     +clr
   &__items
-    float: right
-    width: 460px
+    float: left
+    width: 290px
     font-size: 18px
-    margin-right: 10px
-    padding-left: 30px
+    margin-left: 120px
     padding-bottom: 40px
     +box
-    +background-image(linear-gradient(to bottom left, #000 0%, rgba(40,30,30,.9) 100%))
     &.short
       width: 220px
 
 
   &__item
-    color: #736464
-    margin-top: 30px
+    color: #5a5a5a
+    margin-top: 28px
     font-family: 'conv_pfdintextcondpro-light'
     font-size: 16px
 
     span
-      color: #ffffff
+      color: #1e1e1e
       font-size: 18px
-      text-transform: uppercase
+      text-transform: none
 
   &__watch
+    margin-top: 10px
     position: relative
     float: left
-    width: 450px
-    margin-right: 20px
-    margin-top: 45px
+    width: 360px
+    margin-left: 125px
+
     img
-      width: 450px
-      height: 625px
+      width: 360px
+      height: 580px
       position: relative
       display: block
-
+    .prev
+      position: absolute
+      content: ""
+      +s(prev)
+      top: 40%
+      left: -80px
+    .next
+      position: absolute
+      content: ""
+      +s(next)
+      top: 40%
+      right: -80px
+    .threesixty
+      position: absolute
+      text-align: center
+      padding-top: 35px
+      +box
+      top: 40px
+      left: -80px
+      +s(360)
+      font-size: 30px
+      color: #000
+      content: ""
+      font-family: 'helvetica-4-light4-light'
 
 
 
 .photos
-  background: #271d1d
-  height: 200px
-  padding: 10px 0
-  +box
+  margin-top: 10px
   +clr
   .photos_in
     @extend %in
-    width: 1000px
+    width: 865px
+  .photo__items
+    +background-image(linear-gradient(to bottom, #fff 0%, #fff 50%, #efefef 100%))
+    padding: 20px 0
+    margin-top: 10px
   .photo__item
     position: relative
     display: inline-block
-    width: 320px
-    height: 180px
+    width: 200px
+    height: 140px
     vertical-align: top
     margin-right: 15px
     &:last-child
       margin-right: 0
     span
       position: absolute
-      top: 0
-      left: 0
-      right: 0
-      bottom: 0
-      background: rgba(#271d1d, .8)
+      top: 30px
+      left: 60px
+      right: 60px
+      bottom: 60px
+      width: 80px
+      height: 80px
+      background: rgba(#000, .6)
+      +border-radius(4px)
       +opacity(0)
       +transition(background, .5s)
       &:after
@@ -289,7 +344,8 @@ header
         left: 50%
         +transform(translate(-50%, -50%))
 
-      &:hover
+    &:hover
+      span
         +opacity(1)
 
     img

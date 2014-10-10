@@ -299,3 +299,15 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'helvetica-4-light4-light';
+    src: url('fonts/helv-4-light-webfont.eot');
+    src: url('fonts/helv-4-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/helv-4-light-webfont.woff2') format('woff2'),
+    url('fonts/helv-4-light-webfont.woff') format('woff'),
+    url('fonts/helv-4-light-webfont.ttf') format('truetype'),
+    url('fonts/helv-4-light-webfont.svg#helvetica-4-light4-light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
